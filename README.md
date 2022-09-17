@@ -8,11 +8,6 @@ Geolocation plugin for Flutter using IP-API.com's IP Geolocation API.
 - Supports both free & pro access to IP-API.com
 - Free access does not require an API key.
 
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
 ## Usage
 
 To use this plugin, add `ipapi` as a [dependency in your pubspec.yaml file](https://flutter.dev/docs/development/platform-integration/platform-channels).
