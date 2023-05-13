@@ -2,6 +2,8 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'geo_data.g.dart';
 
+/// [GeoData] will be returned as a result from [getData] and provides
+/// structured access to the geo data returned from IP-API.com as json
 @JsonSerializable()
 class GeoData {
   String? lang;
@@ -56,9 +58,11 @@ class GeoData {
     this.proxy,
     this.hosting,
   });
+
+  /// Factory method to transform json data returned by IP-API.com to [GeoData]
   factory GeoData.fromJson(Map<String, dynamic> json) =>
       _$GeoDataFromJson(json);
 
-  @override
+  /// Helper method to transform [GeoData] back into json format
   Map<String, dynamic> toJson() => _$GeoDataToJson(this);
 }

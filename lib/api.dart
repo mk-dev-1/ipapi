@@ -4,6 +4,8 @@ import 'package:http/http.dart';
 
 import 'models/geo_data.dart';
 
+/// [IpApi] encapsules functions that query endpoints at IP-API.com,
+/// specifically [getData], which retrieves geo data for a given [ip].
 class IpApi {
   /// Get geo data from IP-API.com.
   ///
