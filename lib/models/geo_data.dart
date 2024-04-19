@@ -19,7 +19,7 @@ class GeoData {
   String? district;
   String? zip;
   double? lat;
-  double? long;
+  double? lon;
   String? timezone;
   int? offset;
   String? currency;
@@ -46,7 +46,7 @@ class GeoData {
     this.district,
     this.zip,
     this.lat,
-    this.long,
+    this.lon,
     this.timezone,
     this.offset,
     this.currency,
