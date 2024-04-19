@@ -9,28 +9,48 @@ class GeoData {
   String? lang;
   String? query;
   String? status;
+
+  /// Only contained in response from IP-API.com if part of [fields] when calling [getData]
   String? continent;
+
+  /// Only contained in response from IP-API.com if part of [fields] when calling [getData]
   String? continentCode;
   String? country;
   String? countryCode;
   String? region;
   String? regionName;
   String? city;
+
+  /// Only contained in response from IP-API.com if part of [fields] when calling [getData]
   String? district;
   String? zip;
   double? lat;
   double? lon;
   String? timezone;
+
+  /// Only contained in response from IP-API.com if part of [fields] when calling [getData]
   int? offset;
+
+  /// Only contained in response from IP-API.com if part of [fields] when calling [getData]
   String? currency;
   String? isp;
   String? org;
   @JsonKey(name: 'as')
   String? asno;
+
+  /// Only contained in response from IP-API.com if part of [fields] when calling [getData]
   String? asname;
+
+  /// Only contained in response from IP-API.com if part of [fields] when calling [getData]
   String? reverse;
+
+  /// Only contained in response from IP-API.com if part of [fields] when calling [getData]
   bool? mobile;
+
+  /// Only contained in response from IP-API.com if part of [fields] when calling [getData]
   bool? proxy;
+
+  /// Only contained in response from IP-API.com if part of [fields] when calling [getData]
   bool? hosting;
 
   GeoData({
