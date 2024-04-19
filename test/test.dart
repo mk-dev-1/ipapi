@@ -1,5 +1,6 @@
 import 'package:collection/collection.dart';
 import 'package:ipapi/ipapi.dart';
+import 'package:ipapi/models/geo_data.dart';
 import 'package:test/test.dart';
 
 void main() {
