@@ -28,6 +28,7 @@ class GeoData {
   @JsonKey(name: 'as')
   String? asno;
   String? asname;
+  String? reverse;
   bool? mobile;
   bool? proxy;
   bool? hosting;
@@ -54,6 +55,7 @@ class GeoData {
     this.org,
     this.asno,
     this.asname,
+    this.reverse,
     this.mobile,
     this.proxy,
     this.hosting,
