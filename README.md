@@ -18,33 +18,34 @@ Here are small examples that show you how to use the API.
 
 ```dart
 // Obtain all available information for the current IP using the free API
-final GeoData? geoData = await IpApi.getData();
+final GeoData? geoData = await IpApi.getData("172.217.0.0");
 print(geoData?.toJson());
 /* Prints
 {
     "query": "172.217.0.0",
     "status": "success",
-    "continent": "North America",
-    "continentCode": "NA",
+    "continent": null, // optional field not included in request
+    "continentCode": null, // optional field not included in request
     "country": "United States",
     "countryCode": "US",
-    "region": "OH",
-    "regionName": "Ohio",
-    "city": "Columbus",
-    "district": "",
-    "zip": "43212",
-    "lat": 39.9881,
-    "lon": -83.0479,
-    "timezone": "America/New_York",
-    "offset": -14400,
-    "currency": "USD",
+    "region": "IL",
+    "regionName": "Illinois",
+    "city": "Chicago",
+    "district": null, // optional field not included in request
+    "zip": "60666",
+    "lat": 41.8781,
+    "lon": -87.6298,
+    "timezone": "America/Chicago",
+    "offset": null, // optional field not included in request
+    "currency": null, // optional field not included in request
     "isp": "Google LLC",
     "org": "Google LLC",
     "as": "AS15169 Google LLC",
-    "asname": "GOOGLE",
-    "mobile": false,
-    "proxy": false,
-    "hosting": true
+    "reverse": null, // optional field not included in request
+    "asname": null, // optional field not included in request
+    "mobile": null, // optional field not included in request
+    "proxy": null, // optional field not included in request
+    "hosting": null // optional field not included in request
 }
 */
 
@@ -98,5 +99,5 @@ final GeoData? geoData = await IpApi.getData({
 **Please note the following important information**
 
 - We are not associated with IP-API.com in any way. This plugin is simply a wrapper around the API provided by IP-API.com. We do not assume any liability that may arise from using this plugin or the IP-API.com.
-- Please note that the free version of IP-API.com's IP Geolocation API is limited to 45 requests per IP and hour and uses HTTP (**not** HTTP**S**) and may not be used for commercial purposes. Usage for commercial purposes requires a pro license.
+- Please note that the free version of IP-API.com's IP Geolocation API is limited to 45 requests per IP and minute and uses HTTP (**not** HTTP**S**) and may not be used for commercial purposes. Usage for commercial purposes requires a pro license.
 - Please make sure to read up on the full terms of use and up-2-date API specifications directly at https://ip-api.com.
