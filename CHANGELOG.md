@@ -1,3 +1,9 @@
+# 2.0.0
+
+- **Breaking change** Renamed `long` parameter of `GeoData` to `lon`
+- Updated example app
+- Updated readme
+
 # 1.0.2
 
 - Fixed changelog typo
