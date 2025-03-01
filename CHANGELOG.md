@@ -1,3 +1,9 @@
+# 2.0.1
+
+- Updated dependencies
+- Fixed broken test case
+- Fixed missing import in example app
+
 # 2.0.0
 
 - **Breaking change** Renamed `long` parameter of `GeoData` to `lon`

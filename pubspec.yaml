@@ -1,6 +1,6 @@
 name: ipapi
 description: Geolocation plugin for Flutter based on ip-api.com. Supports both free and pro access.
-version: 2.0.0
+version: 2.0.1
 repository: https://github.com/mk-dev-1/ipapi
 tags:
   - geolocation
