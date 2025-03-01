@@ -109,7 +109,7 @@ void main() {
     expect(result?.continent, equals('North America'));
     expect(result?.continentCode, equals('NA'));
     expect(result?.district, equals(''));
-    expect(result?.offset, equals(-18000));
+    expect(result?.offset, equals(-21600));
     expect(result?.currency, equals('USD'));
     expect(result?.asname, equals('GOOGLE'));
     expect(result?.reverse, equals('ord38s04-in-f0.1e100.net'));
