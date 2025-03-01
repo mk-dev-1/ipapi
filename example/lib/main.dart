@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:ipapi/ipapi.dart';
+import 'package:ipapi/models/geo_data.dart';
 
 void main() {
   runApp(const MyApp());
